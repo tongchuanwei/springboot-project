@@ -11,4 +11,4 @@ if [  -n  "$pid"  ];  then
 fi
 
 echo starting
-nohup java -jar aidrg-web.jar --server.port=6789 >/dev/null 2>&1  &
+nohup java -jar springboot-web.jar --server.port=6789 >/dev/null 2>&1  &
