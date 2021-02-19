@@ -1,4 +1,4 @@
 package com.hello.chain.project.biz.api.order;
 
-public interface OrderService {
+public interface OrderQueryService {
 }
