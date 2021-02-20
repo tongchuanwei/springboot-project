@@ -13,7 +13,7 @@
 		<version>2.0.8.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.hello.chain</groupId>
+	<groupId>com.hello.way</groupId>
 	<artifactId>springboot-project</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>springboot-project</name>
@@ -26,12 +26,12 @@
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
-				<groupId>com.hello.chain</groupId>
+				<groupId>com.hello.way</groupId>
 				<artifactId>springboot-biz</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>com.hello.chain</groupId>
+				<groupId>com.hello.way</groupId>
 				<artifactId>springboot-web</artifactId>
 				<version>${project.version}</version>
 			</dependency>
