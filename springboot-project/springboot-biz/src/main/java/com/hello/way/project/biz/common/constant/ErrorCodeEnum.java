@@ -6,7 +6,16 @@ package com.hello.way.project.biz.common.constant;
 public enum ErrorCodeEnum {
 
 
+    //参数校验错误码段 1000-00-xxx
+    CONDITION_FALSE(100000000, "校验条件为false"),
+    PARAM_NULL(100000001, "校验参数为null"),
+    PARAM_EMPTY(100000002, "校验参数为空"),
+    PARAM_BLANK(100000003, "校验参数为空"),
 
+    NOT_EXITS(200000001, "记录不存在"),
+    NOT_SUPPORT(200000002, "暂不支持"),
+    VERSION_ERROR(200000003, "数据版本错误"),
+    COMPENSATE_ERROR(200000004, "补偿失败"),
     /**
      * 系统异常
      */
