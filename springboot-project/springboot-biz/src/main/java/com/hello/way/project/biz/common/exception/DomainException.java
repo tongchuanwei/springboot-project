@@ -1,7 +1,7 @@
 package com.hello.way.project.biz.common.exception;
 
 
-import com.hello.way.project.biz.common.constant.ErrorCode;
+import com.hello.way.project.biz.common.constant.ErrorCodeEnum;
 
 /**
  * @author way
@@ -14,7 +14,7 @@ public class DomainException extends BaseException {
         super(code, message);
     }
 
-    public DomainException(ErrorCode errorCode) {
+    public DomainException(ErrorCodeEnum errorCode) {
         super(errorCode);
     }
 

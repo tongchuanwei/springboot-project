@@ -61,7 +61,15 @@ public class Result<T> {
         this.data = data;
     }
 
+    public Result() {
+    }
 
+    public Result(Integer code, String message, T data) {
+        this.success = true;
+        this.code = code;
+        this.msg = message;
+        this.data = data;
+    }
     @Override
     public String toString() {
         return new ToStringBuilder(this)

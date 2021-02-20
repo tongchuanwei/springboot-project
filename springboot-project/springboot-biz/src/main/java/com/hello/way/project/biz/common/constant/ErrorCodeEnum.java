@@ -3,7 +3,7 @@ package com.hello.way.project.biz.common.constant;
 /**
  * @author way
  */
-public enum ErrorCode {
+public enum ErrorCodeEnum {
 
     /**
      * 2501（1~4位） -> 系统（TMS）
@@ -40,8 +40,10 @@ public enum ErrorCode {
     SYSTEM_ERROR(200000005, "系统异常"),
     /*500 < code <= 600, server error*/
 
-
-    ;
+    FAILED(500, "操作失败"),
+    VALIDATE_FAILED(404, "参数检验失败"),
+    UNAUTHORIZED(401, "暂未登录或token已经过期"),
+    FORBIDDEN(403, "没有相关权限");
 
 
 
@@ -52,12 +54,12 @@ public enum ErrorCode {
         return msg;
     }
 
-    ErrorCode(int code, String msg) {
+    ErrorCodeEnum(int code, String msg) {
         this.code = code;
         this.msg = msg;
     }
-    public static ErrorCode getType(String msg){
-        for(ErrorCode result: ErrorCode.values()){
+    public static ErrorCodeEnum getType(String msg){
+        for(ErrorCodeEnum result: ErrorCodeEnum.values()){
             if(result.msg.equals(msg)){
                 return  result;
             }

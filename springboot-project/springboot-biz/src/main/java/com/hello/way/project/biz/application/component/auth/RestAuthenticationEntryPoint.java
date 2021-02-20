@@ -1,7 +1,7 @@
 package com.hello.way.project.biz.application.component.auth;
 
 import cn.hutool.json.JSONUtil;
-import com.hellobike.platform.scp.common.rpc.ResultUtils;
+import com.hello.way.project.biz.common.result.ResultUtils;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.web.AuthenticationEntryPoint;
 import org.springframework.stereotype.Component;

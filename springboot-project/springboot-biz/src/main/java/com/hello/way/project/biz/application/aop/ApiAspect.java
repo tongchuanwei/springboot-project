@@ -2,7 +2,7 @@ package com.hello.way.project.biz.application.aop;
 
 import com.alibaba.fastjson.JSON;
 import com.hello.way.project.biz.application.annotation.ApiAnnotation;
-import com.hello.way.project.biz.common.constant.ErrorCode;
+import com.hello.way.project.biz.common.constant.ErrorCodeEnum;
 import com.hello.way.project.biz.common.exception.BaseException;
 import com.hello.way.project.biz.common.exception.BizException;
 import com.hello.way.project.biz.common.exception.SystemException;
@@ -78,9 +78,9 @@ public class ApiAspect {
             BaseException baseException = (BaseException) e;
             return ResultUtils.failResult(baseException);
         } else if (e instanceof IllegalArgumentException) {
-            return ResultUtils.failResult(new BizException(ErrorCode.PARAM_INVALID.getCode(), e.getMessage()));
+            return ResultUtils.failResult(new BizException(ErrorCodeEnum.PARAM_INVALID.getCode(), e.getMessage()));
         } else {
-            return ResultUtils.failResult(new SystemException(ErrorCode.SYSTEM_ERROR.getCode(), e.getMessage()));
+            return ResultUtils.failResult(new SystemException(ErrorCodeEnum.SYSTEM_ERROR.getCode(), e.getMessage()));
         }
     }
 

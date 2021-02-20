@@ -1,7 +1,7 @@
 package com.hello.way.project.biz.common.exception;
 
 
-import com.hello.way.project.biz.common.constant.ErrorCode;
+import com.hello.way.project.biz.common.constant.ErrorCodeEnum;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -24,7 +24,7 @@ public abstract class BaseException extends RuntimeException {
         this.message = message;
     }
 
-    public BaseException(ErrorCode errorCode){
+    public BaseException(ErrorCodeEnum errorCode){
         super(errorCode.getMsg());
 
         this.code = errorCode.getCode();

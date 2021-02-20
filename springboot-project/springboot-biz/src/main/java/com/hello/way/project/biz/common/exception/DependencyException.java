@@ -1,6 +1,6 @@
 package com.hello.way.project.biz.common.exception;
 
-import com.hello.way.project.biz.common.constant.ErrorCode;
+import com.hello.way.project.biz.common.constant.ErrorCodeEnum;
 
 /**
  * @author way
@@ -13,7 +13,7 @@ public class DependencyException extends BaseException {
         super(code, message);
     }
 
-    public DependencyException(ErrorCode errorCode){
+    public DependencyException(ErrorCodeEnum errorCode){
         super(errorCode);
     }
 
