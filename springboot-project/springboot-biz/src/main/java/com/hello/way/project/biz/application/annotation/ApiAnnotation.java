@@ -1,6 +1,6 @@
 package com.hello.way.project.biz.application.annotation;
 
-import com.hello.way.project.biz.application.component.aspect.ApiAspect;
+
 import org.springframework.core.annotation.Order;
 
 import java.lang.annotation.ElementType;
@@ -9,7 +9,7 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * @see ApiAspect
+ * @see
  * @author way
  */
 @Retention(RetentionPolicy.RUNTIME)
