@@ -12,7 +12,6 @@ import java.security.MessageDigest;
  * MD5加密工具
  * 
  * @author way
- * @version $Id: MD5Util.java, v 0.1 2020年03月23日 01:59 xiahui Exp $$
  */
 public class MD5Util {
     private static final Logger LOGGER = LoggerFactory.getLogger(MD5Util.class);
