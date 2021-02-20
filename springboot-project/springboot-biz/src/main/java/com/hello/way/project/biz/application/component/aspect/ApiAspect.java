@@ -78,7 +78,7 @@ public class ApiAspect {
             BaseException baseException = (BaseException) e;
             return ResultUtils.failResult(baseException);
         } else if (e instanceof IllegalArgumentException) {
-            return ResultUtils.failResult(new BizException(ErrorCodeEnum.PARAM_INVALID.getCode(), e.getMessage()));
+            return ResultUtils.failResult(new BizException(ErrorCodeEnum.VALIDATE_FAILED.getCode(), e.getMessage()));
         } else {
             return ResultUtils.failResult(new SystemException(ErrorCodeEnum.SYSTEM_ERROR.getCode(), e.getMessage()));
         }

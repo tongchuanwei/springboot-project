@@ -1,4 +1,4 @@
 package com.hello.way.project.biz.domain.order.enums;
 
-public class UserEnums {
+public class StatusEnums {
 }
