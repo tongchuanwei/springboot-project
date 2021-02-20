@@ -1,4 +1,4 @@
 package com.hello.way.project.biz.domain.order.entity;
 
-public class UserEntity {
+public class OrderEntity {
 }
