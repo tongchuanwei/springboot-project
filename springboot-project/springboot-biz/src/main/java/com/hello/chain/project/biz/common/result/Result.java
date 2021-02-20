@@ -1,4 +1,4 @@
-package com.hello.chain.project.biz.common.rpc;
+package com.hello.chain.project.biz.common.result;
 
 import org.apache.commons.lang3.builder.ToStringBuilder;
 

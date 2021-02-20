@@ -6,7 +6,7 @@ import com.hello.chain.project.biz.common.constant.ErrorCode;
 import com.hello.chain.project.biz.common.exception.BaseException;
 import com.hello.chain.project.biz.common.exception.BizException;
 import com.hello.chain.project.biz.common.exception.SystemException;
-import com.hello.chain.project.biz.common.rpc.ResultUtils;
+import com.hello.chain.project.biz.common.result.ResultUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
