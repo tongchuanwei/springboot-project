@@ -15,4 +15,6 @@ public class Constants {
     public static final String ORDER_NO_DEFAULT_FORMAT = "yyMMddHHmmss";
 
     public static final int BATCH_QUERY_PRODUCT_SIZE = 200;
+
+    public static final String PRODUCT_PROCESSOR_KEY="product";
 }

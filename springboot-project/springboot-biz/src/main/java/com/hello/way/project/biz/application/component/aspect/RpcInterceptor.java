@@ -1,5 +1,5 @@
 
-package com.hello.way.project.biz.application.aop;
+package com.hello.way.project.biz.application.component.aspect;
 
 import com.hello.way.project.biz.common.constant.ErrorCodeEnum;
 import com.hello.way.project.biz.common.exception.BizException;

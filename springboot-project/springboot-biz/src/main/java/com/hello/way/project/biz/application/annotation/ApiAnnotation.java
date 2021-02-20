@@ -1,6 +1,6 @@
 package com.hello.way.project.biz.application.annotation;
 
-import com.hello.way.project.biz.application.aop.ApiAspect;
+import com.hello.way.project.biz.application.component.aspect.ApiAspect;
 import org.springframework.core.annotation.Order;
 
 import java.lang.annotation.ElementType;

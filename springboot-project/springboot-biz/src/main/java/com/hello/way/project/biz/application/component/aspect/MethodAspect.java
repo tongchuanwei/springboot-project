@@ -1,4 +1,4 @@
-package com.hello.way.project.biz.application.aop;
+package com.hello.way.project.biz.application.component.aspect;
 
 import com.alibaba.fastjson.JSON;
 import com.hello.way.project.biz.application.annotation.MethodListener;
