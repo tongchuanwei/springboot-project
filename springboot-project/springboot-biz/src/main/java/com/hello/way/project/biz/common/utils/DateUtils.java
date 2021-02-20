@@ -1,34 +1,93 @@
 package com.hello.way.project.biz.common.utils;
 
-import com.hello.way.project.biz.common.constant.Constants;
-import org.apache.commons.lang3.time.DateFormatUtils;
+import org.apache.commons.lang3.StringUtils;
 
+import java.text.DateFormat;
 import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 
 /**
- * @Author: way
- * @Date: 2019-09-23 17:21
+ * @author way
+ * @date 2020/3/1
  */
 public class DateUtils {
 
+    private static final String FORMAT = "yyyy-MM-dd HH:mm:ss";
 
-    public static String toString(Date date){
-        return DateFormatUtils.format(date, Constants.DATE_DEFAULT_FORMAT);
-    }
+    private static final String FORMAT_MINUTE = "yyyy.MM.dd HH:mm";
+    
+    private static final String FORMAT_SHORT_DATE = "yyyyMMdd";
 
-    public static String toString(Date date, String format){
-        return DateFormatUtils.format(date, format);
-    }
-
-    public static Date toDate(String str){
-        try {
-            return org.apache.commons.lang3.time.DateUtils.parseDate(str, Constants.DATE_DEFAULT_FORMAT);
-        } catch (ParseException e) {
-            // add log and throw
-            e.printStackTrace();
+    /**
+     * @Description: String类型毫秒数转换成日期格式字符串
+     * @return String yyyy-MM-dd HH:mm
+     */
+    public static String stringToDateString(String lo){
+        if (StringUtils.isEmpty(lo)) {
+            return "";
         }
-
-        return null;
+        long time = Long.parseLong(lo);
+        Date date = new Date(time);
+        SimpleDateFormat sd = new SimpleDateFormat(FORMAT_MINUTE);
+        return sd.format(date);
     }
+
+    /**
+     * @Description: Date类型毫秒数转换成日期格式字符串
+     * @return String yyyy-MM-dd HH:mm
+     */
+    public static String dateToString(Date date){
+        if (null == date) {
+            return "";
+        }
+        SimpleDateFormat sd = new SimpleDateFormat(FORMAT_MINUTE);
+        return sd.format(date);
+    }
+    
+    /**
+     * @Description: Date类型毫秒数转换成日期格式字符串
+     * @return String yyyyMMdd
+     */
+    public static String toShortDateString(Date date){
+        if (null == date) {
+            return "";
+        }
+        SimpleDateFormat sd = new SimpleDateFormat(FORMAT_SHORT_DATE);
+        return sd.format(date);
+    }
+
+    public static Date getToday() {
+        DateFormat fmt = new SimpleDateFormat("yyyy-MM-dd");
+        String result = fmt.format(new Date());
+        return formatDate(result);
+    }
+    /**
+     * 格式化日期
+     *
+     * @return
+     */
+    public static Date formatDate(String date) {
+        DateFormat fmt = new SimpleDateFormat("yyyy-MM-dd");
+        try {
+            return fmt.parse(date);
+        } catch (ParseException e) {
+            return null;
+        }
+    }
+
+    public static Date addNum(Date date,int num){
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTime(date);
+        calendar.add(Calendar.DAY_OF_MONTH, num);
+        return calendar.getTime();
+    }
+
+    public static String date2String(Date date ) {
+        DateFormat fmt = new SimpleDateFormat("yyyyMMdd");
+        return fmt.format(date);
+    }
+
+
 }
