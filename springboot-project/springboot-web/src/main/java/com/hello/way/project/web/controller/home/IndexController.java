@@ -1,8 +1,8 @@
 package com.hello.way.project.web.controller.home;
 
 
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -17,13 +17,11 @@ import org.springframework.web.bind.annotation.RestController;
  * @Date:  2019-08-07
  */
 @RestController
+@RequestMapping("/index")
 public class IndexController  {
 
-    private static final String PATH = "/error";
-
-    @RequestMapping(value = PATH,method = RequestMethod.GET)
+    @GetMapping("/error")
     public String error() {
-        return " ";
+        return "error";
     }
-
 }
