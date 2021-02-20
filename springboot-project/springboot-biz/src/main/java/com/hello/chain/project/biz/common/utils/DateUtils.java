@@ -8,7 +8,7 @@ import java.text.ParseException;
 import java.util.Date;
 
 /**
- * @Author: chaiHua
+ * @Author: way
  * @Date: 2019-09-23 17:21
  */
 public class DateUtils {

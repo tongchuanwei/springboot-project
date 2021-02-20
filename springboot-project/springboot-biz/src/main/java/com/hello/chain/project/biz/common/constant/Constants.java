@@ -1,7 +1,7 @@
 package com.hello.chain.project.biz.common.constant;
 
 /**
- * @Author: chaiHua
+ * @Author: way
  * @Date: 2019-09-23 16:38
  */
 public class Constants {

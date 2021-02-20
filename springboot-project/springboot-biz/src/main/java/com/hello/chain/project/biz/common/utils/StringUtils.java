@@ -3,7 +3,7 @@ package com.hello.chain.project.biz.common.utils;
 import com.alibaba.fastjson.JSON;
 
 /**
- * @author elvis
+ * @author way
  */
 public class StringUtils {
 

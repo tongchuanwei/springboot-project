@@ -2,7 +2,7 @@ package com.hello.chain.project.biz.common.exception;
 
 /**
  * 系统异常bug
- * @author elvis
+ * @author way
  */
 public class SystemException extends BizException {
 

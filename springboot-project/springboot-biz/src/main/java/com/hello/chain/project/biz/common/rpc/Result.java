@@ -4,7 +4,7 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
 
 /**
  * @param <T>
- * @author elvis
+ * @author way
  */
 public class Result<T> {
 

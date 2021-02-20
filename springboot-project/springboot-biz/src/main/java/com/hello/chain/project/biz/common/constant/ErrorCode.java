@@ -1,7 +1,7 @@
 package com.hello.chain.project.biz.common.constant;
 
 /**
- * @author chaihua
+ * @author way
  */
 public enum ErrorCode {
 

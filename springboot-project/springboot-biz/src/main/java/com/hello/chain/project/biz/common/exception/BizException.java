@@ -4,7 +4,7 @@ package com.hello.chain.project.biz.common.exception;
 import com.hello.chain.project.biz.common.constant.ErrorCode;
 
 /**
- * @author elvis
+ * @author way
  */
 public class BizException extends BaseException {
 
